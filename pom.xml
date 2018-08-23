@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>java-getting-started</artifactId>
@@ -101,9 +103,13 @@
       </plugin>
     </plugins>
   </build>
-<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-</web-app>
+  <servlet>
+    <servlet-name>helloViterbo</servlet-name>
+    <servlet-class>HelloViterbo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>helloViterbo</servlet-name>
+    <url-pattern>/HelloViterbo</url-pattern>
+  </servlet-mapping>
 </project>
 

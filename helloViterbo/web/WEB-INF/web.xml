@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
         <servlet-name>helloViterbo</servlet-name>
-        <servlet-class>main.java.com.example.HelloViterbo</servlet-class>
+        <servlet-class>src.java.HelloViterbo</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>helloViterbo</servlet-name>

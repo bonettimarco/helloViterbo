@@ -59,7 +59,7 @@ public class Main {
   HelloViterbo hello = new HelloViterbo();
   @ResponseBody
   public String helloWorld() {
-    return hello
+    return hello.toString();
   }
 
   @RequestMapping("/db")

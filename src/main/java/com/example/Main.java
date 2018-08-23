@@ -58,7 +58,7 @@ public class Main {
   @RequestMapping("/HelloViterbo")
   @ResponseBody
   String helloViterbo() {
-    "Qualquer coisa qui em texto";
+    return "Qualquer coisa qui em texto";
   }
 
 

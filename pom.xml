@@ -2,6 +2,7 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>java-getting-started</artifactId>
@@ -101,20 +102,13 @@
       </plugin>
     </plugins>
   </build>
-        <!-- Servlet que irá processar as requisiçoes -->
-        <servlet>
-              <servlet-name>dispatcherServlet</servlet-name>
-              <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-              <init-param>
-                    <param-name>contextConfigLocation</param-name>
-                    <param-value>/WEB-INF/dispatcherServlet/servlet-context.xml</param-value>
-              </init-param>
-              <load-on-startup>1</load-on-startup>
-        </servlet>
-    
-        <servlet-mapping>
-              <servlet-name>dispatcherServlet</servlet-name>
-              <url-pattern>/</url-pattern>
-        </servlet-mapping>
+  <servlet>
+    <servlet-name>helloViterbo</servlet-name>
+    <servlet-class>HelloViterbo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>helloViterbo</servlet-name>
+    <url-pattern>/HelloViterbo</url-pattern>
+  </servlet-mapping>
 </project>
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>java-getting-started</artifactId>
@@ -101,6 +101,20 @@
       </plugin>
     </plugins>
   </build>
-
+        <!-- Servlet que irá processar as requisiçoes -->
+        <servlet>
+              <servlet-name>dispatcherServlet</servlet-name>
+              <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+              <init-param>
+                    <param-name>contextConfigLocation</param-name>
+                    <param-value>/WEB-INF/dispatcherServlet/servlet-context.xml</param-value>
+              </init-param>
+              <load-on-startup>1</load-on-startup>
+        </servlet>
+    
+        <servlet-mapping>
+              <servlet-name>dispatcherServlet</servlet-name>
+              <url-pattern>/</url-pattern>
+        </servlet-mapping>
 </project>
-</web-app>
+

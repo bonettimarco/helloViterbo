@@ -56,7 +56,7 @@ public class Main {
 
   @RequestMapping("/HelloViterbo")
   public String getHelloViterbo() {
-    return new HelloViterbo;
+    SpringApplication.run(HelloViterbo,class, args);
   }
 
   @RequestMapping("/db")

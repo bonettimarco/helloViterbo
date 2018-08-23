@@ -57,7 +57,7 @@ public class Main {
 
   @RequestMapping("/HelloViterbo")
   HelloViterbo hello = new HelloViterbo();
-  return hello;
+  @ResponseBody(hello)
 
 
 

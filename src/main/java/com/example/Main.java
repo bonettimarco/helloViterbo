@@ -55,9 +55,8 @@ public class Main {
 
 
   @RequestMapping("/HelloViterbo")
-  public String getHelloViterbo() {
-    return new HelloViterbo();
-  }
+    String index() { return new HelloViterbo(); }
+
 
   @RequestMapping("/db")
   String db(Map<String, Object> model) {

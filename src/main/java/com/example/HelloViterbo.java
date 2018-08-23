@@ -43,6 +43,7 @@ public class HelloViterbo extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
         }
+        return response;
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

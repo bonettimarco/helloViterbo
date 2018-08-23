@@ -55,7 +55,9 @@ public class Main {
 
 
   @RequestMapping("/HelloViterbo")
-    return "HelloViterbo";
+  public String getHelloViterbo() {
+    return "Get some Foos with Header";
+  }
 
   @RequestMapping("/db")
   String db(Map<String, Object> model) {

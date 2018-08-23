@@ -25,6 +25,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -52,6 +53,14 @@ public class Main {
   String index() {
     return "index";
   }
+
+
+  @RequestMapping("/HelloViterbo")
+  @ResponseBody
+  public String helloViterbo() {
+    return "Get some Foos with Header";
+  }
+
 
   @RequestMapping("/db")
   String db(Map<String, Object> model) {

@@ -34,10 +34,7 @@ public class HelloViterbo extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet HelloViterbo</title>");
-            out.println("</head>");
+            out.println("<html xmlns:th='http://www.thymeleaf.org' th:replace='~{fragments/layout :: layout (~{::body},'index')}'>"
             out.println("<body>");
             out.println("<h1>Hello via Servlet</h1>");
             out.println("</body>");

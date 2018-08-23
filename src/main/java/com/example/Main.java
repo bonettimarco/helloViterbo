@@ -56,7 +56,7 @@ public class Main {
 
   @RequestMapping("/HelloViterbo")
   public String getHelloViterbo() {
-    return HelloViterbo;
+    return new HelloViterbo;
   }
 
   @RequestMapping("/db")

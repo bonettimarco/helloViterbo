@@ -101,5 +101,13 @@
       </plugin>
     </plugins>
   </build>
-
+  <!-- Servlet que irá processar as requisiçoes -->
+  <servlet>
+    <servlet-name>helloViterbo</servlet-name>
+    <servlet-class>HelloViterbo</servlet-class>
+   </servlet>
+   <servlet-mapping>
+     <servlet-name>helloViterbo</servlet-name>
+     <url-pattern>/HelloViterbo</url-pattern>
+   </servlet-mapping>
 </project>

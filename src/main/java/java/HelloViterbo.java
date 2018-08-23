@@ -16,6 +16,7 @@ import java.io.PrintWriter;
  *
  * @author marco
  */
+@WebServlet(name = "HelloViterbo", urlPatterns = ("/HelloViterbo"))
 public class HelloViterbo extends HttpServlet {
 
     /**
@@ -27,7 +28,7 @@ public class HelloViterbo extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    @WebServlet(name = "HelloViterbo", urlPatterns = ("/HelloViterbo"))
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

@@ -57,7 +57,6 @@ public class Main {
 
 
   @RequestMapping("/HelloViterbo")
-  @ResponseBody
   String helloViterbo() { return "index"; }
 
   @RequestMapping("/db")

@@ -55,7 +55,7 @@ public class Main {
 
 
   @RequestMapping("/HelloViterbo")
-     return new HelloViterbo;
+     String helloViterbo() { return "HelloViterbo"; }
 
   @RequestMapping("/db")
   String db(Map<String, Object> model) {

@@ -101,13 +101,17 @@
       </plugin>
     </plugins>
   </build>
+</project>
   <!-- Servlet que irá processar as requisiçoes -->
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
   <servlet>
     <servlet-name>helloViterbo</servlet-name>
     <servlet-class>HelloViterbo</servlet-class>
-   </servlet>
-   <servlet-mapping>
-     <servlet-name>helloViterbo</servlet-name>
-     <url-pattern>/HelloViterbo</url-pattern>
-   </servlet-mapping>
-</project>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>helloViterbo</servlet-name>
+    <url-pattern>/HelloViterbo</url-pattern>
+  </servlet-mapping>
+</web-app>

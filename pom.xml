@@ -101,13 +101,5 @@
       </plugin>
     </plugins>
   </build>
-  <servlet>
-    <servlet-name>HelloViterbo</servlet-name>
-    <servlet-class>HelloViterbo</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>helloViterbo</servlet-name>
-    <url-pattern>/HelloViterbo</url-pattern>
-  </servlet-mapping>
 </project>
 

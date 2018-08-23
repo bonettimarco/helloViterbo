@@ -102,7 +102,7 @@
     </plugins>
   </build>
   <servlet>
-    <servlet-name>helloViterbo</servlet-name>
+    <servlet-name>HelloViterbo</servlet-name>
     <servlet-class>HelloViterbo</servlet-class>
   </servlet>
   <servlet-mapping>

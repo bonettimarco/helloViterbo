@@ -56,9 +56,9 @@ public class Main {
   }
 
 
-  @RequestMapping(value = "/HelloViterbo", method = RequestMethod.GET)
+  @RequestMapping("/HelloViterbo")
   @ResponseBody
-  public String getFoosBySimplePath() {
+  public String helloViterbo() {
     return "Get some Foos";
   }
 

@@ -16,7 +16,7 @@ import java.io.PrintWriter;
  *
  * @author marco
  */
-@WebServlet(name="HelloViterbo", urlPatterns = ("/HelloViterbo"))
+//@WebServlet(name="HelloViterbo", urlPatterns = ("/HelloViterbo"))
 public class HelloViterbo extends HttpServlet {
 
     /**

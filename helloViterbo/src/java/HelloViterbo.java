@@ -37,7 +37,7 @@ public class HelloViterbo extends HttpServlet {
             out.println("<title>Servlet HelloViterbo</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet HelloViterbo at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Hello via Servlet</h1>");
             out.println("</body>");
             out.println("</html>");
         }

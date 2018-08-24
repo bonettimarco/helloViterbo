@@ -19,6 +19,8 @@
     <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
     <webjars-jquery.version>3.3.1-1</webjars-jquery.version>
 <!--  </properties> -->
+  </properties>
+
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -26,7 +28,6 @@
     <relativePath/>
   </parent>
 
-  </properties>
   <dependencies>
     <dependency>
         <groupId>org.apache.tomcat.embed</groupId>

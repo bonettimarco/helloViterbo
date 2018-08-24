@@ -50,8 +50,8 @@ public class Main {
   }
 
   @RequestMapping("/")
-  String index() {
-    return "index";
+  String olah() {
+    return "HelloViterbo";
   }
 
   @RequestMapping("/HelloViterbo")

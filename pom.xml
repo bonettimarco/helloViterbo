@@ -131,7 +131,7 @@
   <name>java-getting-started</name> 
 
   <build>
-    <finalName>embeddedTomcatSample</finalName>
+<!--    <finalName>embeddedTomcatSample</finalName> -->
     <plugins>
         <plugin>
         <groupId>org.springframework.boot</groupId>
@@ -144,7 +144,7 @@
 <!--              <goal>assemble</goal> -->
             </goals>
             <configuration>
-<!-- inseri aqui -->
+<!-- inseri aqui 
                 <assembleDirectory>target</assembleDirectory>
                 <programs>
                     <program>
@@ -152,7 +152,7 @@
                         <name>webapp</name>
                     </program>
                 </programs>
-				<!-- até aqui -->
+				 até aqui -->
               <additionalProperties>
                 <encoding.source>${project.build.sourceEncoding}</encoding.source>
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>

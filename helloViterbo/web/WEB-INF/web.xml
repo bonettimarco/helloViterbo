@@ -6,7 +6,8 @@
     <!-- Servlet que irá processar as requisiçoes -->
     <servlet>
         <servlet-name>helloViterbo</servlet-name>
-        <servlet-class>br.HelloViterbo</servlet-class>
+        <servlet-class>com.HelloViterbo</servlet-class>
+
     </servlet>
     <servlet-mapping>
         <servlet-name>helloViterbo</servlet-name>

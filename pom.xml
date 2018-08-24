@@ -151,7 +151,7 @@
             </configuration>
           </execution>
         </executions>
-            <groupId2>org.codehaus.mojo</groupId>
+<!--            <groupId>org.codehaus.mojo</groupId> -->
             <artifactId>appassembler-maven-plugin</artifactId>
             <version>2.0.0</version>
             <configuration>

@@ -141,7 +141,7 @@
             <phase>package</phase>
             <goals>
               <goal>build-info</goal>
-              <goal>assemble</goal>
+<!--              <goal>assemble</goal> -->
             </goals>
             <configuration>
 <!-- inseri aqui -->

@@ -5,21 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
   <artifactId>java-getting-started</artifactId>
-  <version>1.0</version> <!-- novidades daqui em diante 
-  <packaging>jar</packaging>
-  <name>embeddedTomcatSample Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <tomcat.version>8.5.23</tomcat.version>
--->  <properties> 
-    <java.version>1.8</java.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <webjars-bootstrap.version>4.1.0</webjars-bootstrap.version>
-    <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
-    <webjars-jquery.version>3.3.1-1</webjars-jquery.version>
-  </properties> 
- <!-- </properties> -->
+  <version>1.0</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
@@ -27,49 +13,35 @@
     <version>2.0.1.RELEASE</version>
     <relativePath/>
   </parent>
+  <name>java-getting-started</name>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <webjars-bootstrap.version>4.1.0</webjars-bootstrap.version>
+    <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
+    <webjars-jquery.version>3.3.1-1</webjars-jquery.version>
+  </properties>
 
   <dependencies>
+<!-- Servlet -->
     <dependency>
-        <groupId>org.apache.tomcat.embed</groupId>
-        <artifactId>tomcat-embed-core</artifactId>
-        <version>${tomcat.version}</version>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
-        <groupId>org.apache.tomcat.embed</groupId>
-        <artifactId>tomcat-embed-jasper</artifactId>
-        <version>${tomcat.version}</version>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.1</version>
+      <scope>provided</scope>
     </dependency>
     <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat-jasper</artifactId>
-        <version>${tomcat.version}</version>
+       <groupId>javax.servlet</groupId>
+       <artifactId>jstl</artifactId>
+       <version>1.2</version>
     </dependency>
-    <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat-jasper-el</artifactId>
-        <version>${tomcat.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.tomcat</groupId>
-        <artifactId>tomcat-jsp-api</artifactId>
-        <version>${tomcat.version}</version>
-    </dependency>
-<!--  </dependencies>  -->
-
-              <!-- Spring -->
-              <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-context</artifactId>
-                    <version>4.2.4.RELEASE</version>
-              </dependency>
-    
-              <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-webmvc</artifactId>
-                    <version>4.2.4.RELEASE</version>
-              </dependency>
-
-<!--  <dependencies> -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
@@ -139,31 +111,18 @@
       <version>1.2</version>
     </dependency>
   </dependencies>
-  <name>java-getting-started</name> 
 
   <build>
-<!--    <finalName>embeddedTomcatSample</finalName> -->
     <plugins>
-        <plugin>
+      <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <executions>
           <execution>
-            <phase>package</phase>
             <goals>
               <goal>build-info</goal>
-<!--              <goal>assemble</goal> -->
             </goals>
             <configuration>
-<!-- inseri aqui 
-                <assembleDirectory>target</assembleDirectory>
-                <programs>
-                    <program>
-                        <mainClass>launch.Main</mainClass>
-                        <name>webapp</name>
-                    </program>
-                </programs>
-				 até aqui -->
               <additionalProperties>
                 <encoding.source>${project.build.sourceEncoding}</encoding.source>
                 <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
@@ -173,35 +132,9 @@
             </configuration>
           </execution>
         </executions>
-        </plugin>
-    </plugins>
-   </build>
-   
-   <!--          <build>
-              <plugins>
-                    <plugin>
-                          <groupId>org.apache.maven.plugins</groupId>
-                          <artifactId>maven-compiler-plugin</artifactId>
-                          <version>3.3</version>
-                          <configuration>
-                                <source>1.8</source>
-                                <target>1.8</target>
-                          </configuration>
-                    </plugin>
-              </plugins>
-        </build>  -->
-<!--            <groupId>org.codehaus.mojo</groupId> -->
- <!--           <artifactId>appassembler-maven-plugin</artifactId>
-            <version>2.0.0</version>
-            <configuration>
-            </configuration>
-  </build>
-  <build>
-    <plugins>
-      <plugin>
       </plugin>
     </plugins>
   </build>
--->
+
 </project>
 

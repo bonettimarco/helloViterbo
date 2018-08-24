@@ -1,7 +1,4 @@
 
-
-
-<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
 
 <body>
@@ -11,7 +8,12 @@
         <a href="/" class="lang-logo">
             <img src="/lang-logo.png">
         </a>
-        <h1> <a href="/">HELLO WORLD via Servlet!</a></h1>
+<div class="container">
+  <h1>Database Output</h1>
+  <ul th:each="record : ${records}">
+    <li th:text="${record}"/>
+  </ul>
+</div>
     </div>
 </div>
 

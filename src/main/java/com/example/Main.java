@@ -54,15 +54,18 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
- 
+
   @RequestMapping("/")
 	String index() {
     return "index";
   }
 
   @RequestMapping("/HelloViterbo")
-   String olah() {
-    return "HelloViterbo";
+    String olah(Map<String, Object> model) {
+      ArrayList<String> output = new ArrayList<String>();
+      output.add(Hello World via Servlet"); 
+      model.put("records", output);
+      return "helloViterbo";
   }
 
   @RequestMapping("/db")

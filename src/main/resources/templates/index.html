@@ -8,10 +8,7 @@
     <a href="/" class="lang-logo">
       <img src="/lang-logo.png">
     </a>
-<<<<<<< HEAD
-=======
 
->>>>>>> 8937044207fe4796df43deb6441104adbb807337
     <h1><a href="HelloViterbo">Hello World</a></h1>
   </div>
 </div>

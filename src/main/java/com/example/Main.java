@@ -60,11 +60,6 @@ public class Main {
     return "index";
   }
 
-  @RequestMapping("/HelloViterbo")
-   String olah() {
-    return "HelloViterbo";
-  }
-
   @RequestMapping("/db")
   String db(Map<String, Object> model) {
     try (Connection connection = dataSource.getConnection()) {

@@ -4,18 +4,21 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <!-- Servlet que irá processar as requisiçoes -->
-    <servlet>
-        <servlet-name>helloViterbo</servlet-name>
-        <servlet-class>com.HelloViterbo</servlet-class>
-
+ <servlet>
+        <servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>
+                /WEB-INF/spring-context.xml
+            </param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
+
     <servlet-mapping>
-        <servlet-name>helloViterbo</servlet-name>
-        <url-pattern>/HelloViterbo</url-pattern>
+        <servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
-    <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
-    </session-config>
-</web-app>

@@ -63,7 +63,7 @@ public class Main {
   @RequestMapping("/HelloViterbo")
     String olah(Map<String, Object> model) {
       ArrayList<String> output = new ArrayList<String>();
-      output.add(Hello World via Servlet"); 
+      output.add("Hello World via Servlet"); 
       model.put("records", output);
       return "helloViterbo";
   }

@@ -26,6 +26,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+//  import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -37,6 +41,7 @@ import java.util.Map;
 
 @Controller
 @SpringBootApplication
+
 public class Main {
 
   @Value("${spring.datasource.url}")
@@ -49,6 +54,7 @@ public class Main {
     SpringApplication.run(Main.class, args);
   }
 
+ 
   @RequestMapping("/")
 	String index() {
     return "index";

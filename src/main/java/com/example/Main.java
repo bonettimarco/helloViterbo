@@ -61,11 +61,10 @@ public class Main {
   }
 
   @RequestMapping("/HelloViterbo")
-  String nome = "Marco";
     String olah(Map<String, Object> model) {
       ArrayList<String> output = new ArrayList<String>();
       output.add("Hello World via Servlet"); 
-      output.add("Bem-vindo "+nome);
+      output.add("Bem-vindo Marco");
       model.put("records", output);
       return "helloViterbo";
   }

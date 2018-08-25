@@ -61,7 +61,6 @@ public class Main {
   }
 
   @RequestMapping("/HelloViterbo")
-	String nome = getParameter("name");
     String olah(Map<String, Object> model) {
       ArrayList<String> output = new ArrayList<String>();
       output.add("Hello World via Servlet"); 

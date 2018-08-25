@@ -60,10 +60,18 @@ public class Main {
     return "index";
   }
 
+  @ModelAttribute("name")
+  public Name getUser(HttpServletRequest request)
+  {
+	  return (Name) request.getAttribute("name");
+  }
+
   @RequestMapping("/HelloViterbo")
+	String nome = @ModelAttribute("name") Name name)
     String olah(Map<String, Object> model) {
       ArrayList<String> output = new ArrayList<String>();
       output.add("Hello World via Servlet"); 
+      output.add("Bem-vindo "+nome");
       model.put("records", output);
       return "helloViterbo";
   }

@@ -62,15 +62,12 @@ public class Main {
   }
 
   @RequestMapping("/HelloViterbo")
-	public class HelloViterboController {
-		@RequestMapping
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {
 			ArrayList<String> output = new ArrayList<String>();
 			output.add("Hello World via Servlet"); 
 			output.add("Bem-vindo"+nome);
 			model.put("records", output);
 			return "helloViterbo";
-			}
 	}
 
   @RequestMapping("/db")

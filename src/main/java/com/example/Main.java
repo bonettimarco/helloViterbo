@@ -64,7 +64,7 @@ public class Main {
     String olah(Map<String, Object> model) {
       ArrayList<String> output = new ArrayList<String>();
       output.add("Hello World via Servlet"); 
-      output.add("Bem-vindo"+request.getParameter("name");
+      output.add("Bem-vindo"+request.getParameter("name"));
       model.put("records", output);
       return "helloViterbo";
   }

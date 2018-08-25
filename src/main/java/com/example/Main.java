@@ -61,13 +61,17 @@ public class Main {
   }
 
   @RequestMapping("/HelloViterbo")
-    String olah(@RequestParam("name") String nome, Map<String, Object> model) {
-      ArrayList<String> output = new ArrayList<String>();
-      output.add("Hello World via Servlet"); 
-      output.add("Bem-vindo"+nome);
-      model.put("records", output);
-      return "helloViterbo";
-  }
+    
+	public class HelloViterboController {
+		@RequestMapping
+			String olah(@RequestParam("name") String nome, Map<String, Object> model) {
+			ArrayList<String> output = new ArrayList<String>();
+			output.add("Hello World via Servlet"); 
+			output.add("Bem-vindo"+nome);
+			model.put("records", output);
+			return "helloViterbo";
+			}
+	}
 
   @RequestMapping("/db")
   String db(Map<String, Object> model) {

@@ -63,7 +63,7 @@ public class Main {
 
   @RequestMapping("/HelloViterbo")
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {
-			if nome==null {
+			if(nome==null) {
 				nome = "World!";
 			}
 			ArrayList<String> output = new ArrayList<String>();

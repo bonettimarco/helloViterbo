@@ -64,7 +64,7 @@ public class Main {
   @RequestMapping("/HelloViterbo")
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {
 			if nome==null {
-				nome = "World!"
+				nome = "World!";
 			}
 			ArrayList<String> output = new ArrayList<String>();
 			output.add("Hello World via Servlet"); 

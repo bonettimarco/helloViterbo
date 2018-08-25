@@ -64,7 +64,7 @@ public class Main {
     
 	public class HelloViterboController {
 		@RequestMapping
-			String olah(@RequestParam("name") String nome, Map<String, Object> model) {
+			String olah(@RequestParam String nome, Map<String, Object> model) {
 			ArrayList<String> output = new ArrayList<String>();
 			output.add("Hello World via Servlet"); 
 			output.add("Bem-vindo"+nome);

@@ -65,7 +65,7 @@ public class Main {
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {
 			ArrayList<String> output = new ArrayList<String>();
 			output.add("Hello World via Servlet"); 
-			output.add("Bem-vindo  "+nome.uppercase);
+			output.add("Bem-vindo  "+nome.toUpperCase());
 			model.put("records", output);
 			return "helloViterbo";
 	}

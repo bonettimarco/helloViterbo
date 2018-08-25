@@ -63,7 +63,7 @@ public class Main {
 
   @RequestMapping("/HelloViterbo")
 	public class HelloViterboController {
-		@RequestMapping(params = "name")
+		@RequestMapping
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {
 			ArrayList<String> output = new ArrayList<String>();
 			output.add("Hello World via Servlet"); 

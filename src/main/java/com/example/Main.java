@@ -69,6 +69,7 @@ public class Main {
   private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
+	  @Entity
 	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
 	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
 	  EntityManager em = emf.createEntityManager();
@@ -76,8 +77,7 @@ public class Main {
 	  et.begin();
 	  em.persist(livro);
 	  et.commit();
-	  
-	  em.close();
+	  close();
 	  emf.close();
 
 	  SpringApplication.run(Main.class, args);

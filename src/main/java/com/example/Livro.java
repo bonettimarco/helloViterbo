@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import java.io.*;
 
   @Entity
-  public class Livro implements Serializable {
+  public class Livro {
 	  @Id @GeneratedValue
 	  private Long id;
 	  @Column(nullable=false)

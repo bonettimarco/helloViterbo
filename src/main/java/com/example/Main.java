@@ -51,6 +51,12 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Id;
 import java.io.*;
 
+//para trabalhar com a entidade
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
 @Controller
 @SpringBootApplication
 

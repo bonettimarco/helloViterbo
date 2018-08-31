@@ -40,6 +40,14 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Map;
 
+//implementação JPA
+
+import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Id;
+import java.io.*;
+
 @Controller
 @SpringBootApplication
 
@@ -52,6 +60,17 @@ public class Main {
   private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
+	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
+	  EntityManagerFactory emf = PersistencelcreateEntityManagerFactory("ExemploJPA");
+	  EntityManager em = emf.createEntityManager();
+	  EntityTransaction et = em.getTransaction();
+	  et.begin();
+	  em.persist(livro);
+	  et.commit();
+	  
+	  em.close();
+	  emf.close();
+	  
     SpringApplication.run(Main.class, args);
   }
 
@@ -103,6 +122,38 @@ public class Main {
       config.setJdbcUrl(dbUrl);
       return new HikariDataSource(config);
     }
+  }
+  
+  @Entity
+  public class Livro {
+	  @Id @GeneratedValue
+	  private Long id;
+	  @Column(nullable=false)
+	  private String titulo;
+	  private String autor;
+	  private Float preco;
+	  @Column(length=2000)
+	  private String descricao;
+	  private Integer numPaginas;
+	  
+	  public Livro() {}
+	  
+	  public Livro(String titulo, String autor, String preco, String descricao, Integer numPaginas){
+		  this.titulo = titulo;
+		  this.autor = autor;
+		  this.preco = preco;
+		  this.descricao = descricao;
+		  this.numPaginas = numPaginas;
+	  }
+	  
+	  public String getTitulo() {
+		  return this.titulo
+	  }
+	  
+	  @Overridepublic String toString() {
+		  return "Um livro de " + this.autor;
+	  }
+	  
   }
 
 }

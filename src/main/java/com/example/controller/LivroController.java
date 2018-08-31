@@ -33,7 +33,7 @@ public class LivroController {
 		return repository.findAll();
 	}
 	@RequestMapping(value="/livros/{id}", method=RequestMethod.GET)
-	public Livro getLivro(@PathVariable long id){
+	public Livro getTitulo(@PathVariable long id){
 		return repository.findOne(id);
 	}
 	

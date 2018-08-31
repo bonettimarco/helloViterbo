@@ -62,8 +62,8 @@ public class Main {
   private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
-/*	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
-	  EntityManagerFactory emf = PersistencelcreateEntityManagerFactory("ExemploJPA");
+	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
+/*	  EntityManagerFactory emf = PersistencelcreateEntityManagerFactory("ExemploJPA");
 	  EntityManager em = emf.createEntityManager();
 	  EntityTransaction et = em.getTransaction();
 	  et.begin();

@@ -12,7 +12,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.springwalk.sample.model.Livro;
+import com.example.model.Livro;
 
 public interface LivroRepository extends CrudRepository<Livro, Long>{
 	List<Livro> findByTitulo(String titulo);

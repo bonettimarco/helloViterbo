@@ -42,10 +42,10 @@ import java.util.Map;
 
 //implementação JPA
 
-import com.lib.javax.persistence.Entity;
-import com.lib.javax.persistence.NamedQueries;
-import com.lib.javax.persistence.NamedQuery;
-import com.lib.javax.persistence.Id;
+import lib.javax.persistence.Entity;
+import lib.javax.persistence.NamedQueries;
+import lib.javax.persistence.NamedQuery;
+import lib.javax.persistence.Id;
 import java.io.*;
 
 @Controller

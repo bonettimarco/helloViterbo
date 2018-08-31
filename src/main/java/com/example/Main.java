@@ -33,7 +33,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
+import lib.java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -42,10 +42,10 @@ import java.util.Map;
 
 //implementação JPA
 
-import javax.persistence.Entity;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.Id;
+import com.lib.javax.persistence.Entity;
+import com.lib.javax.persistence.NamedQueries;
+import com.lib.javax.persistence.NamedQuery;
+import com.lib.javax.persistence.Id;
 import java.io.*;
 
 @Controller

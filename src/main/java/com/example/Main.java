@@ -91,11 +91,11 @@ public class Main {
 	  et.commit();
 	  em.close();
 	  emf.close();
-*/
+
 	  String index() {
     return "index";
   }
-
+*/
 
   @RequestMapping("/HelloViterbo")
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {

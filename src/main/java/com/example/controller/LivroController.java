@@ -4,7 +4,7 @@
  * This software is the confidential and proprietary information of SK C&C.
  * You shall not disclose such Confidential Information and shall use it
  * only in accordance wih the terms of the license agreement you entered into
- * with SK C&C.
+ * with SK LivroC&C.
  */
 package com.example.controller;
 
@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springwalk.sample.model.Customer;
-import com.springwalk.sample.repo.CustomerRepository;
+import com.example.model.Livro;
+import com.example.repo.LivroRepository;
 
 @RestController
 public class LivroController {

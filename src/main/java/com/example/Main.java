@@ -81,6 +81,7 @@ public class Main {
 
 
   @RequestMapping("/livro")
+	@Entity
 	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
 	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
 	  EntityManager em = emf.createEntityManager();

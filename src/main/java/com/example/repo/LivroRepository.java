@@ -14,6 +14,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import com.springwalk.sample.model.Livro;
 
-public interface LIVRORepository extends CrudRepository<Livro, Long>{
+public interface LivroRepository extends CrudRepository<Livro, Long>{
 	List<Livro> findByTitulo(String titulo);
 }

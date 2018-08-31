@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/lang-logo.png">
+    </a>
+
+    <h1><a>Livros peristidos no BD<a></h1>
+	<strong>Digite um novo livro<br></strong>
+	<a>
+		<FORM METHOD=POST ACTION="/livros">
+		<INPUT TYPE=TEXT NAME="titulo"><P>
+		<INPUT TYPE=TEXT NAME="autor"><P>
+		<INPUT TYPE=TEXT NAME="preco"><P>
+		<INPUT TYPE=TEXT NAME="descricao"><P>
+		<INPUT TYPE=TEXT NAME="numpaginas"><P>
+	</a>
+	<strong color="red">
+		<INPUT TYPE=SUBMIT>
+		</strong>
+		</FORM>	
+  </div>
+</div>
+
+</body>
+</html>

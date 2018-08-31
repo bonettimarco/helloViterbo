@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import java.io.*;
 
   @Entity
-  public class Livro {
+  public class Livro implements Serializable {
 	  @Id @GeneratedValue
 	  private Long id;
 	  @Column(nullable=false)

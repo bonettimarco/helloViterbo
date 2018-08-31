@@ -80,8 +80,11 @@ public class Main {
   }
 
 
-  @RequestMapping("/persiste")
-/*	public class Persiste(){
+/*  @RequestMapping("/persiste")
+	  String index() {
+    return "index";
+  }
+	public class Persiste(){
   @Entity
 	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
 	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
@@ -93,12 +96,9 @@ public class Main {
 	  em.close();
 	  emf.close();
 
-	  String index() {
-    return "index";
-  }
-*/
-	}
 
+	}
+*/
   @RequestMapping("/HelloViterbo")
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {
 			if(nome==null) {

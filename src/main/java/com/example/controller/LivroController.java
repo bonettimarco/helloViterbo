@@ -25,7 +25,7 @@ import com.example.repo.LivroRepository;
 @RestController
 public class LivroController {
 	@Autowired
-	CustomerRepository repository;
+	LivroRepository repository;
 	
 	@RequestMapping(value="/livros", method=RequestMethod.GET)
 	@ResponseBody

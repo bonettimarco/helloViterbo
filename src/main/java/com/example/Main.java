@@ -67,9 +67,9 @@ public class Main {
   @Value("${spring.datasource.url}")
   private String dbUrl;
 
-  @Autowired
+/*  @Autowired
   private DataSource dataSource;
-
+*/
   public static void main(String[] args) throws Exception {
 	
 	  SpringApplication.run(Main.class, args);

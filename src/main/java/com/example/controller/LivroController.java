@@ -32,11 +32,11 @@ public class LivroController {
 	public Iterable<Livro> getLivros(){
 		return repository.findAll();
 	}
-	@RequestMapping(value="/livros/{id}", method=RequestMethod.GET)
+/*	@RequestMapping(value="/livros/{id}", method=RequestMethod.GET)
 	public Livro getTitulo(@PathVariable long id){
 		return repository.findOne(id);
 	}
-	
+	*/
 	@RequestMapping(value="/livros", method=RequestMethod.POST)
 	public void addLivro(@RequestBody Livro livro){
 		repository.save(livro);

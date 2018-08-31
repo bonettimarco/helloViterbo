@@ -86,12 +86,12 @@ public class Main {
 	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
 	  EntityManager em = emf.createEntityManager();
 	  EntityTransaction et = em.getTransaction();
-	  et.begin();
+/*	  et.begin();
 	  em.persist(livro);
 	  et.commit();
 	  em.close();
 	  emf.close();
-
+*/
 	  String index() {
     return "index";
   }

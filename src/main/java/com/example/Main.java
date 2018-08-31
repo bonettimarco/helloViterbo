@@ -70,7 +70,7 @@ public class Main {
 
   public static void main(String[] args) throws Exception {
 	  
-	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
+/*	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
 	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
 	  EntityManager em = emf.createEntityManager();
 	  EntityTransaction et = em.getTransaction();
@@ -79,7 +79,7 @@ public class Main {
 	  et.commit();
 	  em.close();
 	  emf.close();
-
+*/
 	  SpringApplication.run(Main.class, args);
   }
 

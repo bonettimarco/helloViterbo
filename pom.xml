@@ -45,11 +45,6 @@
   	-->
 	<dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-dependencies</artifactId>
-	  <scope>import</scope>
-    </dependency>
-	<dependency>
-      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 	<dependency>

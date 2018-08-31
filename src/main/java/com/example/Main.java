@@ -62,8 +62,7 @@ public class Main {
   private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
-	  Livro livro = new Livro
-	  ("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
+	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
 	  EntityManagerFactory emf = PersistencelcreateEntityManagerFactory("ExemploJPA");
 	  EntityManager em = emf.createEntityManager();
 	  EntityTransaction et = em.getTransaction();
@@ -128,7 +127,7 @@ public class Main {
   }
   
   @Entity
-  public class Livro {
+  public class Livro implements Serializable {
 	  @Id @GeneratedValue
 	  private Long id;
 	  @Column(nullable=false)

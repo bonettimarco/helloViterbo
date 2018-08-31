@@ -42,7 +42,7 @@ import java.util.Map;
 
 //implementação JPA
 
-import javax.persistence;
+import javax.persistence.*;
 /*import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Id;

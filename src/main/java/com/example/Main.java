@@ -77,7 +77,7 @@ public class Main {
 	  et.begin();
 	  em.persist(livro);
 	  et.commit();
-	  close();
+	  em.close();
 	  emf.close();
 
 	  SpringApplication.run(Main.class, args);

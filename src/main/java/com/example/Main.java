@@ -147,7 +147,7 @@ public class Main {
 	  }
 	  
 	  public String getTitulo() {
-		  return this.titulo
+		  return this.titulo;
 	  }
 	  
 	  @Overridepublic String toString() {

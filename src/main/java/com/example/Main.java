@@ -141,7 +141,7 @@ public class Main {
 	  
 	  public Livro() {}
 	  
-	  public static Livro(String titulo, String autor, String preco, String descricao, Integer numPaginas){
+	  public Livro(String titulo, String autor, Float preco, String descricao, Integer numPaginas){
 		  this.titulo = titulo;
 		  this.autor = autor;
 		  this.preco = preco;

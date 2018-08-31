@@ -1,6 +1,6 @@
 //implementação JPA
 
-package com.example
+package com.example;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

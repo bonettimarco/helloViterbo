@@ -151,7 +151,8 @@ public class Main {
 		  return this.titulo;
 	  }
 	  
-	  @Overridepublic String toString() {
+	  @Override
+	  public String toString() {
 		  return "Um livro de " + this.autor;
 	  }
 	  

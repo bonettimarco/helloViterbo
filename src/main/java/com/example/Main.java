@@ -147,19 +147,20 @@ public class Main {
 		  this.descricao = descricao;
 		  this.numPaginas = numPaginas;
 	  }
-  	  public setTitulo(String titulo) {
+	  
+  	  public void setTitulo(String titulo) {
 		  this.titulo = titulo;
 	  }
-	  public setAutor(String autor) {
+	  public void setAutor(String autor) {
 		  this.autor = autor;
 	  }
-	  public setPreco(Float preco) {
+	  public void setPreco(Float preco) {
 		  this.preco = preco;
 	  }
-	  public setDescricao(String descricao) {
+	  public void setDescricao(String descricao) {
 		  this.descricao = descricao;
 	  }
-	  public setNumPaginas(Integer numPaginas) {
+	  public void setNumPaginas(Integer numPaginas) {
 		  this.numPaginas = numPaginas;
 	  }
 

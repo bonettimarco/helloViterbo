@@ -10,7 +10,8 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Id;
 import java.io.*;
 
-  public class Livro implements Serializable {
+@Entity
+  public class Livro {
 	  @Id @GeneratedValue
 	  private Long id;
 	  @Column(nullable=false)

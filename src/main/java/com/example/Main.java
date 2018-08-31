@@ -69,17 +69,7 @@ public class Main {
   private DataSource dataSource;
 
   public static void main(String[] args) throws Exception {
-	  
-/*	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
-	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
-	  EntityManager em = emf.createEntityManager();
-	  EntityTransaction et = em.getTransaction();
-	  et.begin();
-	  em.persist(livro);
-	  et.commit();
-	  em.close();
-	  emf.close();
-*/
+	
 	  SpringApplication.run(Main.class, args);
   }
 
@@ -88,6 +78,23 @@ public class Main {
 	String index() {
     return "index";
   }
+
+
+  @RequestMapping("/livro")
+	  Livro livro = new Livro("O Guia do Mocheileiro das Galáxias", "Grupo alunos", 40.0F, "Humor e dicção", 380);
+	  EntityManagerFactory emf = Persistence.createEntityManagerFactory("ExemploJPA");
+	  EntityManager em = emf.createEntityManager();
+	  EntityTransaction et = em.getTransaction();
+	  et.begin();
+	  em.persist(livro);
+	  et.commit();
+	  em.close();
+	  emf.close();
+
+	  String index() {
+    return "index";
+  }
+
 
   @RequestMapping("/HelloViterbo")
 			public String olah(@RequestParam("name") String nome, Map<String, Object> model) {

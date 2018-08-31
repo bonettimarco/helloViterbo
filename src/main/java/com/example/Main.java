@@ -16,7 +16,7 @@
 
 package com.example;
 
-import com.example.livro;
+import com.example.Livro;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;

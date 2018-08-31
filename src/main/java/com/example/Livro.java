@@ -8,7 +8,7 @@ import javax.persistence.NamedQuery;
 import javax.persistence.Id;
 import java.io.*;
 
-  @Entity
+
   public class Livro {
 	  @Id @GeneratedValue
 	  private Long id;

@@ -135,7 +135,7 @@
   </dependencies>
 
   <build>
-      <plugins>
+    <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -155,7 +155,7 @@
             <goals><goal>copy-dependencies</goal></goals>
           </execution>
         </executions>
-    <plugins>
+	  </plugin>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>

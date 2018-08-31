@@ -101,7 +101,7 @@ public class Main {
 			model.put("records", output);
 			return "helloViterbo";
 	}
-
+/*
   @RequestMapping("/db")
   String db(Map<String, Object> model) {
     try (Connection connection = dataSource.getConnection()) {
@@ -122,7 +122,7 @@ public class Main {
       return "error";
     }
   }
-/*
+
   @Bean
   public DataSource dataSource() throws SQLException {
     if (dbUrl == null || dbUrl.isEmpty()) {
